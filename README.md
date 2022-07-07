@@ -10,6 +10,7 @@ npm install
 npm run dev (dev mode) or npm start
 
 GET /:word search for a word
+
 POST /     register a new word or update an existing one
   params: 
     word: The word to register
