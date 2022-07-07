@@ -16,7 +16,7 @@ const getWord = (word) => {
 router.get('/:word', async (req, res) => {
     const definition = getWord(req.params.word)
     if (definition) return res.json({ definition })
-    return res.status(400).json({ error: 'Word not found' })
+    return res.status(404).json({ error: 'Word not found' })
 })
 
 // POST /
